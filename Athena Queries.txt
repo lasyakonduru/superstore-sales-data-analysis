@@ -1,0 +1,113 @@
+-- Sales by Category
+SELECT 
+    category,
+    SUM(sales) AS total_sales
+FROM 
+    "db-superstore"."orders"
+GROUP BY 
+    category
+ORDER BY 
+    total_sales DESC;
+
+-- Profit by Product
+SELECT 
+    "product name",
+    SUM(profit) AS total_profit
+FROM 
+    "db-superstore"."orders"
+GROUP BY 
+    "product name"
+ORDER BY 
+    total_profit DESC;
+
+-- Profit by Category and Sub-Category
+SELECT 
+    Category,
+    "sub-category",
+    SUM(Profit) AS total_profit
+FROM 
+    "db-superstore"."orders"
+GROUP BY 
+    Category, "sub-category"
+ORDER BY 
+    total_profit DESC;
+
+-- Sales by State and City
+SELECT 
+    State,
+    City,
+    SUM(Sales) AS total_sales
+FROM 
+    "db-superstore"."orders"
+GROUP BY 
+    State, City
+ORDER BY 
+    total_sales DESC;
+
+-- Sales by Customer Segment
+SELECT 
+    segment,
+    SUM(Sales) AS total_sales
+FROM 
+    "db-superstore"."orders"
+GROUP BY 
+    Segment
+ORDER BY 
+    total_sales DESC;
+
+-- Customer Lifetime Value
+SELECT 
+    "customer id",
+    "customer name",
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit
+FROM 
+    "db-superstore"."orders"
+GROUP BY 
+    "customer id", "customer name"
+ORDER BY 
+    total_sales DESC;
+
+-- Order Processing Time
+SELECT 
+    "Order ID",
+    date_diff('day', date_parse("Order Date", '%m/%d/%Y'), date_parse("Ship Date", '%m/%d/%Y')) AS processing_time
+FROM 
+    "db-superstore"."orders";
+
+-- Sales and Profit by Shipping Mode
+SELECT 
+    "ship mode",
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit
+FROM 
+    "db-superstore"."orders"
+GROUP BY 
+    "ship mode"
+ORDER BY 
+    total_sales DESC;
+
+-- Sales and Profit by Discount
+SELECT 
+    Discount,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit
+FROM 
+    "db-superstore"."orders"
+GROUP BY 
+    Discount
+ORDER BY 
+    Discount DESC;
+
+-- Regional Preferences for Products
+SELECT 
+    Region,
+    "Product Name",
+    SUM(Sales) AS total_sales
+FROM 
+    "db-superstore"."orders"
+GROUP BY 
+    Region, "Product Name"
+ORDER BY 
+    Region, total_sales DESC;
+
