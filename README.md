@@ -1,4 +1,5 @@
 # Enhancing Sales Performance and Operational Efficiency in a Superstore Using AWS Athena and QuickSight
+![Screenshot 2024-06-17 142103](https://github.com/lasyakonduru/superstore-sales-data-analysis/assets/72082947/e52cfd3f-f218-49a1-9931-df45c73a8e47)
 
 ## Project Overview
 This project aims to analyze and improve a superstore's sales performance and operational efficiency by using AWS Athena for data querying and AWS QuickSight for visualization.
