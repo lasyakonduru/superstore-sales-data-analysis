@@ -1,2 +1,27 @@
-# superstore-sales-data-analysis
-Analysis of sales performance and operational efficiency in a superstore using AWS Athena and QuickSight
+# Enhancing Sales Performance and Operational Efficiency in a Superstore Using AWS Athena and QuickSight
+
+## Project Overview
+This project aims to analyze and improve a superstore's sales performance and operational efficiency by using AWS Athena for data querying and AWS QuickSight for visualization.
+
+## Objectives
+- Analyze customer segmentation and behavior
+- Optimize shipping and logistics efficiency
+- Assess the impact of discounts on revenue and profit
+- Evaluate sales performance trends and profitability
+
+## Tools and Technologies
+- AWS Athena
+- AWS QuickSight
+
+## Key Findings
+- Identified top-performing customer segments and states
+- Highlighted potential for high-value targeted promotions
+- Optimized shipping mode preferences
+- Managed discount strategies to maintain financial health
+
+## Conclusion
+The project provided actionable recommendations for targeted marketing, strategic pricing, and enhanced operational decisions.
+
+## Author
+[Lasya Priya Konduru](https://www.linkedin.com/in/lasya-priya-k/)
+
